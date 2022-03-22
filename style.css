@@ -1,0 +1,131 @@
+/* Geral */
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    background-color: purple;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+/* Main */
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.titulo {
+    background-image: url("/img/titulo-background.jpg");
+    height: 50vh;
+    object-fit: cover;
+    object-position: 15% 100%;
+}
+
+.img-bg-titulo {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 5px;
+}
+
+/* Sobre */
+#sobre {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-img {
+    max-height: 300px;
+}
+
+.sobre-texto {
+    padding: 20px;
+    max-width: 300px;
+}
+
+/* Portfolio */
+#portfolio {
+    text-align: center;
+}
+
+#portfolio img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 20px;
+}
+
+.gallery {
+    overflow: hidden;
+    scroll-behavior: smooth;
+    max-height: 75.5vh;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+.gallery__img {
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.img-nav {
+    overflow: hidden;
+}
+
+.img-nav a {
+    height: 135px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+.img-nav__img {
+    object-fit: cover;
+    filter: saturate(0);
+    transition: 0.3s ease all;
+}
+
+.img-nav__img:hover {
+    transform: scale(1.05);
+    filter: saturate(1);
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(34, 34, 34);
+    color: white;
+}
