@@ -124,8 +124,27 @@ main {
     filter: saturate(1);
 }
 
+/* Contato */
+#contato {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 /* Rodapé */
 footer {
+    padding: 10px;
     background-color: rgb(34, 34, 34);
     color: white;
+}
+
+footer div {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
