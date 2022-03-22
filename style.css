@@ -36,7 +36,7 @@ main {
 }
 
 .titulo {
-    background-image: url("/img/titulo-background.jpg");
+    background-image: url("img/titulo-background.jpg");
     height: 50vh;
     object-fit: cover;
     object-position: 15% 100%;
